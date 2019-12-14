@@ -40,25 +40,26 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5,
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  padding: EdgeInsets.all(
-                    10,
+                SizedBox(
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.teal.shade100,
                   ),
+                ),
+                Card(
+                  color: Colors.white,
                   margin: EdgeInsets.symmetric(
                     vertical: 10,
                     horizontal: 20,
                   ),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: ListTile(
+                      leading: Icon(
                         Icons.phone,
                         color: Colors.teal.shade300,
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
+                      title: Text(
                         '+6012345678',
                         style: TextStyle(
                           color: Colors.teal.shade300,
@@ -66,28 +67,23 @@ class MyApp extends StatelessWidget {
                           fontSize: 20,
                         ),
                       ),
-                    ],
+                    ),
                   ),
                 ),
-                Container(
+                Card(
                   color: Colors.white,
-                  padding: EdgeInsets.all(
-                    10,
-                  ),
                   margin: EdgeInsets.symmetric(
                     vertical: 10,
                     horizontal: 20,
                   ),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: ListTile(
+                      leading: Icon(
                         Icons.email,
                         color: Colors.teal.shade300,
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
+                      title: Text(
                         'flutter@google.com',
                         style: TextStyle(
                           color: Colors.teal.shade300,
@@ -95,7 +91,7 @@ class MyApp extends StatelessWidget {
                           fontSize: 20,
                         ),
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ],
